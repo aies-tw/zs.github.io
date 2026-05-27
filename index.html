@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業遠端存取入口</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      padding: 48px 40px;
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      background: #0066cc;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      color: white;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .info-box {
+      background: #f0f4ff;
+      border: 1px solid #c7d7f5;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 28px;
+      font-size: 13px;
+      color: #3355aa;
+      text-align: left;
+    }
+
+    .btn-login {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background: #0066cc;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-login:hover { background: #0052a3; }
+    .btn-login:active { background: #003d7a; }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 12px;
+      color: #999;
+    }
+
+    .footer a { color: #0066cc; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- 換成你的公司 Logo -->
+    <div class="logo">LOGO</div>
+
+    <h1>企業遠端存取入口</h1>
+    <p class="subtitle">
+      使用您的企業帳號登入，<br>安全連接至公司內部資源。
+    </p>
+
+    <div class="info-box">
+      🔒 本連線受 Zscaler Zero Trust 保護，<br>
+      請確認您已安裝 Zscaler Client Connector。
+    </div>
+
+    <!-- 點擊後導向 Zscaler Portal -->
+    
+      class="btn-login"
+      href="https://p.zpa-auth.net/IevTunx4Bg/doauth?origurl=https%3A%2F%2Fremote%2Epantw%2Eorg%3A443%2F"
+      id="loginBtn"
+    >
+      使用企業帳號登入
+    </a>
+
+    <p class="footer">
+      有問題？請聯繫 <a href="mailto:helpdesk@pantw.org">IT Helpdesk</a>
+    </p>
+  </div>
+</body>
+</html>
